@@ -4,7 +4,7 @@ A modern web application for EEG signal analysis built with Vite, React, and Plo
 
 ## ✨ Features
 
-- **CSV Upload**: Easy drag-and-drop or click-to-upload interface for EEG data files
+- **FILE Upload**: Easy drag-and-drop or click-to-upload interface for EEG data files
 - **Interactive Visualization**: Real-time EEG signal plotting with Plotly.js
 - **Signal Analysis**:
   - Variance computation per window
@@ -20,7 +20,7 @@ A modern web application for EEG signal analysis built with Vite, React, and Plo
   - JSON format with raw data
 - **Configurable Parameters**: Adjust window size and sampling rate
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -90,12 +90,12 @@ eeg-insights-react/
 └── README.md
 ```
 
-## 🎯 Usage
+## Usage
 
 ### 1. Upload EEG Data
 
-- Click the upload area or drag-and-drop a CSV file
-- CSV format: One EEG value per row in the first column
+- Click the upload area or drag-and-drop a file
+- format: One EEG value per row in the first column
 - Header row is optional
 - Sample file provided: `public/sample-eeg.csv`
 
@@ -135,23 +135,9 @@ npm run preview
 npm run lint
 ```
 
-## 📊 EEG Data Format
 
-The application expects CSV files with the following format:
 
-```csv
-value
-10.5
-12.3
-15.7
-18.2
-...
-```
 
-- First column contains numeric EEG values
-- One value per row
-- Additional columns are ignored
-- Header row is optional
 
 ## 🧮 Analysis Algorithms
 
